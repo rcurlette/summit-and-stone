@@ -16,7 +16,7 @@ export async function getServerSideProps(context: any) {
 
   // 2. fetch the composition
   const composition = await client.getCompositionBySlug({
-    slug: slug || "home",
+    slug: slug,
   });
 
   // 3. return { props: { something } }
@@ -29,13 +29,19 @@ export async function getServerSideProps(context: any) {
 
 export default function Home({ composition }: { composition: any }) {
   console.log(composition);
-  const hero = composition.slots.content[0];
+  //const hero = composition.slots.content[0];
 
   return (
     <div
       className={`flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
     >
-      <HeroSection hero={hero} />
+      {composition.slots.content.map((component: any, index: number) => {
+        if (component.type === "herosection") {
+          return <HeroSection key={index} hero={component} />;
+        }
+        // add more component types here as you build them
+        return null;
+      })}
     </div>
   );
 }
