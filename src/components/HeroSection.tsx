@@ -6,17 +6,7 @@ export interface HeroSectionProps {
   subtitle?: string;
 }
 
-function getParamValue(
-  component: any,
-  paramName: string,
-  locale: string,
-): string {
-  return component.parameters?.[paramName]?.locales?.[locale] ?? "";
-}
-
 export default function HeroSection({ component }: any) {
-  const title = getParamValue(component, "title", "en-US");
-  const subtitle = getParamValue(component, "subtitle", "en-US");
   return (
     <div>
       <UniformText
