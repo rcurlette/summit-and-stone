@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: card
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Page Meta Title
+    typeConfig: null
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    helpText: Page Meta Description
+    typeConfig: null
+    localizable: true
+categoryId: e0442aff-0d79-4b07-9990-c63a43c85dd9
+useTeamPermissions: true
+slots:
+  - id: header
+    name: Header
+    allowedComponents: []
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: content
+    name: Content
+    allowedComponents:
+      - herosection
+      - contentBlock
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: footer
+    name: Footer
+    allowedComponents: []
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: true
+created: '2026-05-05T10:00:26.57672+00:00'
+updated: '2026-05-06T12:26:39.521186+00:00'

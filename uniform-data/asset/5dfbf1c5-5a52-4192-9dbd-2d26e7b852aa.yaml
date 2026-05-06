@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 5dfbf1c5-5a52-4192-9dbd-2d26e7b852aa
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Hiker overlooking a mountain lake at sunset
+    description:
+      type: text
+      value: >-
+        A person wearing a yellow jacket and backpack stands on rocky terrain,
+        gazing out over a serene mountain lake surrounded by peaks under a
+        colorful sky at sunset.
+    file:
+      type: file
+      value: e6234b18-043f-4533-a8f5-985ccd445616
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/iS8t_qvQQiyyBWu7kBf5EA/i026CaRqR9m5EwlYyzrgiw-ChatGPT-Image-May-6,-2026,-05_36_31-PM.png
+      type: text
+    size:
+      value: 2008209
+      type: number
+    width:
+      value: 1774
+      type: number
+    height:
+      value: 887
+      type: number
+    focalPoint:
+      value:
+        x: 0.78
+        'y': 0.65
+      type: focalPoint
+    custom: {}
+created: '2026-05-06T14:37:30.436608+00:00'
+modified: '2026-05-06T14:37:30.436608+00:00'

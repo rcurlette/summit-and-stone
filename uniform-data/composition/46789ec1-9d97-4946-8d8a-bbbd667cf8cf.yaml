@@ -1,0 +1,260 @@
+composition:
+  _name: Home
+  _id: 46789ec1-9d97-4946-8d8a-bbbd667cf8cf
+  _slug: home
+  type: page
+  parameters:
+    title:
+      type: text
+      locales:
+        en-US: >-
+          Summit & Stone – Quality Products, Helpful Information, Welcoming
+          Service
+    description:
+      type: text
+      locales:
+        en-US: >-
+          Discover Summit & Stone: your destination for quality products,
+          helpful information, and welcoming service. Explore our site to learn
+          more!
+  slots:
+    content:
+      - _id: c6ead1c7-87e6-450e-ada7-77dad7e68696
+        type: herosection
+        parameters:
+          image:
+            type: asset
+            locales:
+              en-US:
+                - _id: d6163109-0fa0-45ca-9bf4-5d1b568b0c43
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: faa34dab-e3a1-4910-80eb-3f20e76c9593
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/iS8t_qvQQiyyBWu7kBf5EA/nJrDUhJMTMiol9MRfwhjJA-toomas-tartes-Yizrl9N_eDA-unsplash.jpg
+                      type: text
+                    file:
+                      type: file
+                      value: 4522588d-3200-4385-8df3-0b8876895d24
+                    size:
+                      value: 4173633
+                      type: number
+                    title:
+                      type: text
+                      value: Hikers walking towards snow-capped mountains
+                    width:
+                      value: 4592
+                      type: number
+                    height:
+                      value: 3064
+                      type: number
+                    mediaType:
+                      value: image/jpeg
+                      type: text
+                    focalPoint:
+                      value:
+                        x: 0.7
+                        'y': 0.6
+                      type: focalPoint
+                    description:
+                      type: text
+                      value: >-
+                        Two hikers with backpacks walking on a trail through a
+                        green mountainous landscape, heading towards a range of
+                        snow-capped peaks under a partly cloudy sky.
+                  _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Summit & Stone
+          subtitle:
+            type: text
+            locales:
+              en-US: Welcome to our site
+          $internal_displayName:
+            type: text
+            value: Hero
+      - _id: f2d01d76-fce3-4f7d-9795-96aacc58492c
+        type: contentBlock
+        parameters:
+          content:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Welcome to Summit & Stone, where "Climb Without
+                          Compromise" isn't just a tagline—it's our everyday.
+                          You're here because you love the outdoors. So do we.
+                          Whether you’re chasing your first summit, dialing in
+                          gear for a thru-hike, or just need a jacket that
+                          laughs at rain, we’ve tested every product so all you
+                          need to do is get out there and explore.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'What you’ll find:'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - tag: ul
+                    type: list
+                    start: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - type: listitem
+                        value: 1
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: 'Trail Tested, Peak Approved Gear:'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 1
+                            version: 1
+                          - mode: normal
+                            text: ' No shortcuts. No gimmicks. Only the stuff we trust on real trails, granite, and snow.'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 2
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: 'Honest Advice:'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 1
+                            version: 1
+                          - mode: normal
+                            text: ' From choosing your first pack to finding a tent that can actually fit two and a dog, we share what works—and what doesn''t.'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 3
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: 'Welcoming Community:'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 1
+                            version: 1
+                          - mode: normal
+                            text: ' Everyone’s invited. All experience levels. All budgets. If you want to be outside, you belong here.'
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    listType: bullet
+                    direction: null
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We believe in durability, sustainability, and having a
+                          laugh along the way. If you make a rookie mistake,
+                          don’t worry—we’ve made it first (sometimes on video).
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Ready to gear up for '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: your mountain, your way
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          ? Dive in. If you have questions, ask. That’s what
+                          experienced friends are for.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          heading:
+            type: text
+            value: >-
+              Summit & Stone – Trail Tested Gear. Honest Advice. Welcoming
+              Community.
+  _locales:
+    - en-US
+created: '2026-05-05T10:11:27.278704+00:00'
+modified: '2026-05-06T14:39:15.369598+00:00'
+pattern: false

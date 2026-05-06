@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: contentBlock
+name: Content Block
+icon: card
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    typeConfig: null
+  - id: content
+    name: Content
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - link
+          - code
+          - table
+          - asset
+          - variable
+          - unorderedList
+          - orderedList
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+            - video
+categoryId: cb498c82-0b7e-4c3e-a5f0-7a9b99acbd38
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-05-06T12:26:29.199182+00:00'
+updated: '2026-05-06T12:33:16.264934+00:00'

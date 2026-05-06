@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: faa34dab-e3a1-4910-80eb-3f20e76c9593
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Hikers walking towards snow-capped mountains
+    description:
+      type: text
+      value: >-
+        Two hikers with backpacks walking on a trail through a green mountainous
+        landscape, heading towards a range of snow-capped peaks under a partly
+        cloudy sky.
+    file:
+      type: file
+      value: 4522588d-3200-4385-8df3-0b8876895d24
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/iS8t_qvQQiyyBWu7kBf5EA/nJrDUhJMTMiol9MRfwhjJA-toomas-tartes-Yizrl9N_eDA-unsplash.jpg
+      type: text
+    size:
+      value: 4173633
+      type: number
+    width:
+      value: 4592
+      type: number
+    height:
+      value: 3064
+      type: number
+    focalPoint:
+      value:
+        x: 0.7
+        'y': 0.6
+      type: focalPoint
+    custom: {}
+created: '2026-05-06T14:06:24.912704+00:00'
+modified: '2026-05-06T14:06:24.912704+00:00'

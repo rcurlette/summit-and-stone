@@ -1,0 +1,42 @@
+asset:
+  type: image
+  _id: ae0c65b2-a80b-48ee-ab84-36c1b2838f6b
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Rohit Tandon 9wg5jCEPBsw unsplash
+    description:
+      type: text
+      value: >-
+        A stunning landscape of snow-covered mountains under a partly cloudy
+        sky. The central peak rises sharply, surrounded by other rugged,
+        glacier-covered mountains. Foreground shows rocky terrain with scattered
+        small rocks and stones.
+    file:
+      type: file
+      value: 6ec64159-59b4-4f4e-8151-a50431cd5c9f
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/iS8t_qvQQiyyBWu7kBf5EA/WPCX-XH1R3GEgIiSzv3Ujg-rohit-tandon-9wg5jCEPBsw-unsplash.jpg
+      type: text
+    size:
+      value: 1243046
+      type: number
+    width:
+      value: 3696
+      type: number
+    height:
+      value: 2448
+      type: number
+    focalPoint:
+      value:
+        x: 0.5
+        'y': 0.45
+      type: focalPoint
+    custom: {}
+created: '2026-05-06T13:52:26.742188+00:00'
+modified: '2026-05-06T13:52:26.742188+00:00'

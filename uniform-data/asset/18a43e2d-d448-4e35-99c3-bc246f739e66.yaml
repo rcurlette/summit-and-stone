@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 18a43e2d-d448-4e35-99c3-bc246f739e66
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Nathan Dumlao pLoMDKtl JY unsplash
+    description:
+      type: text
+      value: >-
+        A scenic overlook featuring two people standing on a rock formation with
+        a vast mountainous landscape and dense forest stretching into the
+        distance under a soft, diffused sky.
+    file:
+      type: file
+      value: b24188a2-cf17-4b17-879f-e49b49cb4190
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/iS8t_qvQQiyyBWu7kBf5EA/wVAz2507SESOKW8csqUrpw-nathan-dumlao-pLoMDKtl-JY-unsplash.jpg
+      type: text
+    size:
+      value: 924155
+      type: number
+    width:
+      value: 3960
+      type: number
+    height:
+      value: 2640
+      type: number
+    focalPoint:
+      value:
+        x: 0.75
+        'y': 0.7
+      type: focalPoint
+    custom: {}
+created: '2026-05-06T14:06:24.912704+00:00'
+modified: '2026-05-06T14:06:24.912704+00:00'
