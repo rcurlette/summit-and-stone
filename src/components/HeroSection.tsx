@@ -1,4 +1,5 @@
 import React from "react";
+import { UniformText } from "@uniformdev/canvas-react";
 
 export interface HeroSectionProps {
   title: string;
@@ -13,15 +14,24 @@ function getParamValue(
   return component.parameters?.[paramName]?.locales?.[locale] ?? "";
 }
 
-export default function HeroSection({ hero }: any) {
-  const title = getParamValue(hero, "title", "en-US");
-  const subtitle = getParamValue(hero, "subtitle", "en-US");
-
+export default function HeroSection({ component }: any) {
+  const title = getParamValue(component, "title", "en-US");
+  const subtitle = getParamValue(component, "subtitle", "en-US");
   return (
     <div>
-      <h1 className="text-4xl font-bold">{title}</h1>
+      <UniformText
+        placeholder="title content goes here"
+        parameterId="title"
+        as="h1"
+        className="text-4xl font-bold"
+      />
       <br />
-      {subtitle && <p className="text-xl"> {subtitle} </p>}
+      <UniformText
+        placeholder="subtitle content goes here"
+        parameterId="subtitle"
+        as="p"
+        className="text-xl"
+      />
     </div>
   );
 }

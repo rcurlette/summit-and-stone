@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import { CanvasClient } from "@uniformdev/canvas";
+import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 
 export async function getServerSideProps(context: any) {
   // 1. create the client
@@ -11,7 +12,6 @@ export async function getServerSideProps(context: any) {
   const slug = Array.isArray(context.query.slug)
     ? context.query.slug[0]
     : context.query.slug || "home";
-  console.log("slug=" + slug);
 
   // 2. fetch the composition
   const composition = await client.getCompositionBySlug({
@@ -27,19 +27,13 @@ export async function getServerSideProps(context: any) {
 }
 
 export default function Home({ composition }: { composition: any }) {
-  console.log(composition);
-
   return (
-    <div
-      className={`flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      {composition.slots.content.map((component: any, index: number) => {
-        if (component.type === "herosection") {
-          return <HeroSection key={index} hero={component} />;
-        }
-        // add more component types here as you build them
-        return null;
-      })}
-    </div>
+    <UniformComposition data={composition}>
+      <div
+        className={`flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+      >
+        <UniformSlot name="content" />
+      </div>
+    </UniformComposition>
   );
 }
