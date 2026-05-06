@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

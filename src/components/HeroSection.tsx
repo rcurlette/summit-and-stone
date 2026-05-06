@@ -9,7 +9,6 @@ export interface HeroSectionProps {
 }
 
 export default function HeroSection({ component }: any) {
-  console.log(JSON.stringify(component.parameters?.image, null, 2));
   const imageAssets = component.parameters?.image?.value ?? [];
   const [firstAsset] = imageAssets;
   const imageUrl = firstAsset
