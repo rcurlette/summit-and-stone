@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "../components/HeroSection";
 import { CanvasClient } from "@uniformdev/canvas";
 
@@ -29,7 +28,6 @@ export async function getServerSideProps(context: any) {
 
 export default function Home({ composition }: { composition: any }) {
   console.log(composition);
-  //const hero = composition.slots.content[0];
 
   return (
     <div
