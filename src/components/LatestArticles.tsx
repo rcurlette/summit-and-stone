@@ -18,7 +18,7 @@ export default function LatestArticles({
           Latest News and Views
         </h2>
         <div className="border-t border-gray-200 mb-8" />
-        <div className="divide-y divide-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <UniformSlot name="articles" />
         </div>
         <div className="mt-12 text-center">

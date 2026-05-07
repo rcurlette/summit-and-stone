@@ -9,7 +9,6 @@ export const formatDate = (dateField: any): string => {
 };
 
 export const GetImageUrl = (imageAssets: any) => {
-  console.log("imageAssets=" + imageAssets);
   if (!imageAssets || !Array.isArray(imageAssets)) return undefined;
 
   const [firstAsset] = imageAssets;

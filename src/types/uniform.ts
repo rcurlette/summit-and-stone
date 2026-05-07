@@ -4,6 +4,12 @@ export interface BlogArticle {
   date?: string;
   title: string;
   summary?: string;
-  href?: string;
+  slug?: object;
+  link?: {
+    path?: string;
+    type?: string;
+    nodeId?: string;
+    projectMapId?: string;
+  };
   content?: string;
 }

@@ -3,7 +3,7 @@ import { UniformText, UniformRichText } from "@uniformdev/canvas-react";
 
 export default function ContentBlock({ component }: any) {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-16 text-3xl font-bold mb-4">
+    <section className="max-w-3xl mx-auto px-6 py-16 text-3xl mb-4">
       <div className="prose">
         <br />
         <br />
