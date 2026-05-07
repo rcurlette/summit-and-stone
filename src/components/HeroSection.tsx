@@ -4,8 +4,7 @@ import { imageFrom } from "@uniformdev/assets";
 import Image from "next/image";
 
 export interface HeroSectionProps {
-  title: string;
-  subtitle?: string;
+  imageUrl?: string;
 }
 
 export default function HeroSection({ component }: any) {
