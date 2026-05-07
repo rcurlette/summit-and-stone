@@ -1,7 +1,8 @@
 import React from "react";
 import { UniformText } from "@uniformdev/canvas-react";
-import { imageFrom } from "@uniformdev/assets";
+
 import Image from "next/image";
+import { GetImageUrl } from "../lib/utils";
 
 export interface HeroSectionProps {
   imageUrl?: string;
@@ -9,16 +10,7 @@ export interface HeroSectionProps {
 
 export default function HeroSection({ component }: any) {
   const imageAssets = component.parameters?.image?.value ?? [];
-  const [firstAsset] = imageAssets;
-  const imageUrl = firstAsset
-    ? imageFrom(firstAsset)
-        .transform({
-          width: 1200, // High resolution for featured images
-          fit: "cover", // Smart crop to maintain aspect ratio
-          focal: firstAsset.fields?.focalPoint?.value || "center", // Focal point support for precise positioning
-        })
-        .url()
-    : undefined;
+  const imageUrl = GetImageUrl(imageAssets);
 
   return (
     <section className="relative font-sans">
