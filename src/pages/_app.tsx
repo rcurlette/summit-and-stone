@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} min-h-screen bg-zinc-50 font-sans dark:bg-black`}
+      className={`${geistSans.className} min-h-screen bg-zinc-50 font-sans dark:bg-black`}
     >
       <NavBar />
       <Component {...pageProps} />
