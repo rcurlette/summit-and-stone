@@ -18,8 +18,8 @@ export async function getServerSideProps(context: any) {
   });
 
   const slug = Array.isArray(context.query.slug)
-    ? context.query.slug[0]
-    : context.query.slug || "home";
+    ? "/" + context.query.slug.join("/")
+    : context.query.slug || "/home";
 
   // 2. fetch the composition
   const compositionFromRoute = (await client.getRoute({
@@ -28,9 +28,6 @@ export async function getServerSideProps(context: any) {
     locale: "en-US",
   })) as any;
 
-  //console.log(JSON.stringify(composition.composition.parameters, null, 2));
-
-  console.log(JSON.stringify(compositionFromRoute, null, 2));
   // 3. return { props: { something } }
   return {
     props: {

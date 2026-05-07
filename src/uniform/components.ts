@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ContentBlock from "@/components/ContentBlock";
 import LatestArticles from "@/components/LatestArticles";
 import BlogArticleIntro from "@/components/BlogArticleIntro";
+import BlogArticleDetail from "@/components/BlogArticleDetail";
 
 registerUniformComponent({
   type: "herosection",
@@ -22,4 +23,9 @@ registerUniformComponent({
 registerUniformComponent({
   type: "blogarticleintro",
   component: BlogArticleIntro,
+});
+
+registerUniformComponent({
+  type: "blogarticledetail",
+  component: BlogArticleDetail,
 });
