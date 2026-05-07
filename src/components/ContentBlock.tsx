@@ -1,11 +1,5 @@
 import React from "react";
 import { UniformText, UniformRichText } from "@uniformdev/canvas-react";
-import { prose } from "@tailwindcss/typography";
-
-export interface ContentBlocProps {
-  title: string;
-  subtitle?: string;
-}
 
 export default function ContentBlock({ component }: any) {
   return (
